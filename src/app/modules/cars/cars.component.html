@@ -1,0 +1,6 @@
+<app-card-banner></app-card-banner>
+<div class="content">
+    <div class="cardContentContainer">
+        <app-card *ngFor="let car of (cars$ | async).cars" [car]="car"></app-card>
+    </div>
+</div>

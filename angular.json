@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "omni"
+    }
+  },
+  "defaultProject": "omni",
+  "cli": {
+    "analytics": "cb164c1e-e4bd-4910-a05c-d1a652190494"
+  }
 }
