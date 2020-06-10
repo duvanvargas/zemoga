@@ -1,0 +1,56 @@
+.containerMessage
+    display: flex
+    margin: auto
+    max-width: 1024px
+    width: 100%
+
+.messageCard
+    margin-top: 10px
+    width: 100%
+    height: 100px
+    @media (max-width: 1000px)
+        height: 120px
+    display: flex
+    background-color: #ebebeb
+    padding: 30px
+    padding-top: 20px
+    padding-bottom: 20px
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 1000px)
+        flex-direction: column
+    .messageAlert
+        flex: 2
+        .title
+            color: #333333
+            font-family: Lato
+            font-size: 22px
+            font-weight: 300
+            font-size: 23px
+        .subtitle
+            color: #333333
+            font-family: Lato
+            font-size: 37px
+            font-weight: 700
+    .messageDescription
+        flex: 6
+        .description
+            width: 100%
+            height: 37px
+            color: #333333
+            font-family: Lato
+            font-size: 15px
+            font-weight: 300
+            letter-spacing: -0.15px
+    .messageAction
+        @media (max-width: 1000px)
+            display: none
+        flex: 1
+        justify-content: center
+        display: flex
+        .close
+            width: 15px
+            height: 16px
+            margin: 10px
+            background-image: url('/assets/images/close.png')
+            background-repeat: no-repeat

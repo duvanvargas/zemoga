@@ -1,1 +1,8 @@
-<p>rulings works!</p>
+<div class="containerRulings">
+    <h2 class="title">Previous Rulings</h2>
+    <div class="containerRulingsCardContainer">
+        <div class="cards" *ngFor="let personData of persons$ | async" [ngClass]="{'d-none': personData.id === 5}" >
+            <app-card (personVoted)="onPersonVoted()" [person]="personData" ></app-card>
+        </div>
+    </div>
+</div>

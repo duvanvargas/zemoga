@@ -1,0 +1,111 @@
+.cardContainer
+    width: 100%
+    max-width: 490px
+    height: 550px
+    display: flex
+    margin-bottom: 10px
+
+.infoCard
+    align-self: flex-end
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.61) 37%, rgba(0, 0, 0, 0) 74%, rgba(0, 0, 0, 0) 100%)
+.voteContainer
+    display: flex
+    align-items: center
+    .like
+        cursor: pointer
+        width: 31px
+        height: 31px
+        background-image: url('/assets/images/thumbsup.png')
+        background-size: 19px
+        background-position: center
+        background-repeat: no-repeat
+        background-color: #1cbbb4
+    .dislike
+        cursor: pointer
+        width: 31px
+        height: 31px
+        background-image: url('/assets/images/thumbsdown.png')
+        background-size: 19px
+        background-position: center
+        background-repeat: no-repeat
+        background-color: #ffad1d
+
+    .name
+        color: #ffffff
+        font-family: Lato
+        font-size: 45px
+        font-weight: 400
+        line-height: 48px
+.infoContainer
+    padding: 30px
+    padding-top: 10px
+    padding-bottom: 10px
+    .description
+        color: #ffffff
+        font-family: Lato
+        font-size: 16px
+        font-weight: 300
+    .buttonContainer
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        .buttonReport
+            cursor: pointer
+            width: 156px
+            display: flex
+            margin-top: 10px
+            margin-bottom: 10px
+            justify-content: center
+            align-items: center
+            height: 40px
+            color: #ffffff
+            font-family: Lato
+            border: 1px solid #ffffff
+            background-color: transparent
+    .altTextContainer
+        .altTextTitle
+            color: #ffffff
+            font-family: Lato
+            font-size: 12px
+            font-weight: 700
+        .altTextSubitle
+            color: #ffffff
+            font-family: Lato
+            font-size: 12px
+            font-weight: 400
+.voteBar
+    display: flex
+    height: 49px
+    align-items: center
+    background-color: rgba(255, 181, 51, 0.8)
+    color: #ffffff
+    font-family: Lato
+    font-size: 29px
+    justify-content: space-between
+    font-weight: 300
+    .positiveBar
+        display: flex
+        align-items: center
+        height: 49px
+        background-color: #299892
+    .votePositive
+        margin-left: 5px
+        margin-right: 5px
+        background-size: contain
+        width: 25px
+        height: 25px
+        background-repeat: no-repeat
+        background-image: url('/assets/images/thumbsup.png')
+    .voteNegative  
+        margin-left: 5px
+        margin-right: 5px
+        background-size: contain  
+        height: 25px
+        width: 25px
+        background-repeat: no-repeat
+        background-image: url('/assets/images/thumbsdown.png')
+    .negative
+        display: flex
+        flex-direction: row
+        align-items: center

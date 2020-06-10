@@ -1,0 +1,32 @@
+<div class="cardContainer" style="background-image: url('{{ person.photo }}')">
+    <div class="infoCard">
+        <div class="voteContainer">
+            <div *ngIf="person.negativeVotes < person.positiveVotes" class="like"></div>
+            <div *ngIf="person.negativeVotes >= person.positiveVotes" class="dislike"></div>
+            <div class="name">{{ person.name }}</div>
+        </div>
+        <div class="infoContainer">
+            <div class="description">
+                {{ person.description }}
+            </div>
+            <div class="buttonContainer">
+                <div class="buttonReport">
+                    View Full Report
+                </div>
+                <div class="altTextContainer">
+                    <div class="altTextTitle">{{ person.id }} month ago</div>
+                    <div class="altTextSubitle">in Entertainment</div>
+                </div>
+            </div>
+        </div>
+        <div class="voteBar">
+            <div class="positiveBar" style="width: {{(person.positiveVotes/(person.positiveVotes + person.negativeVotes))*100 | number }}%">
+                <div class="votePositive" (click)="votePositive(person.id)"></div>{{ (person.positiveVotes/(person.positiveVotes + person.negativeVotes))*100 | number }}%
+            </div>
+            <div class="negative">
+                {{ (person.negativeVotes/(person.positiveVotes + person.negativeVotes))*100 | number }}%<div class="voteNegative" (click)="voteNegative(person.id)"></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
